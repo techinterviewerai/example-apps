@@ -16,6 +16,8 @@ You can see the full endpoint docs at https://api.techinterviewer.ai/docs.
 ## webhook_example_server.py
 
 This shows how to create your webhook route. 
-1. Go to https://admin.techinterviewer.ai/settings
-2. Create and run an ngrok proxy locally with `ngrok http 5000`. 
+1. Create and run an ngrok proxy locally with `ngrok http 5000`. 
+2. 1. Go to https://admin.techinterviewer.ai/settings. Enter your ngrok generated URL inside the webhook URL input and click "Save".
 3. Run the Flask server in `webhook_example_server.py` by doing `python webhook_example_server.py`. 
+4. Run and complete an interview session and monitor the webhook_example_server logs.
+5. You should see events coming in. 
